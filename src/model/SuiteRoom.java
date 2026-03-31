@@ -1,11 +1,11 @@
-package com.bookmystay.rooms;
+package model;
 
 /**
  * Represents a luxury suite room.
  */
 public class SuiteRoom extends Room {
     public SuiteRoom() {
-        super("Suite Room", 2, 700, 300.00);
+        super("SuiteRoom", 2, 700, 300.00);
     }
 
     @Override

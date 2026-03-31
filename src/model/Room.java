@@ -1,13 +1,12 @@
-package com.bookmystay.rooms;
+package model;
+
+import java.io.Serializable;
 
 /**
  * Abstract class representing a generic hotel room.
  * Demonstrates abstraction, encapsulation, and class inheritance preparation.
- * 
- * @author BookMyStay Developer
- * @version 1.0
  */
-public abstract class Room {
+public abstract class Room implements Serializable {
     protected String roomType;
     protected int beds;
     protected int size;
@@ -19,6 +18,9 @@ public abstract class Room {
         this.size = size;
         this.price = price;
     }
+
+    public String getRoomType() { return roomType; }
+    public double getPrice() { return price; }
 
     /**
      * Abstract method to output room specifics.
